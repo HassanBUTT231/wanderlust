@@ -17,7 +17,7 @@ COPY --from=backend-builder /app .
 
 COPY .env.sample .env
 # Expose the port the app runs on
-EXPOSE 8000
+EXPOSE 5000
 
 # Command to start the backend server
 CMD ["npm", "start"]
