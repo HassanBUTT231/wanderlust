@@ -9,6 +9,6 @@ WORKDIR /app
 COPY --from=frontend-builder /app .
 COPY .env.sample .env.local
 
-EXPOSE 5000
+EXPOSE 5173
 
 CMD ["npm","run","dev", "--","--host"]
